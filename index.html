@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>example</title>
+  <style>
+    body {
+      background-color: rgb(179, 117, 117);
+      color: rgb(20, 20, 62);
+    }
+
+    a:link {
+      color: azure;
+    }
+
+    a:active {
+      color: rgb(236, 9, 9);
+    }
+
+    p.testingTegHr {
+      text-transform: uppercase;
+      color: navy;
+    }
+
+    code {
+      font-family: "Courier New", Courier, monospace;
+      color: black;
+      background-color: #f1f1f1;
+      padding: 2px;
+      font-size: 100%;
+    }
+
+    kbd {
+      border-radius: 2px;
+      padding: 2px;
+      border: 1px solid black;
+    }
+
+    q {
+      color: black;
+      font-style: italic;
+    }
+
+    .useJs {
+      color: white;
+      background-color: dodgerblue;
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+    }
+    .mispeledText {
+      text-decoration-color: red;
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50;
+    }
+
+    .button1:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+    }
+
+    .button2:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 style="background-color: rgb(85, 85, 149)">basic html</h1>
+  <h2 style="color: rgb(6, 6, 34)">basic html</h2>
+  <h3>basic html</h3>
+  <h4>basic html</h4>
+  <h5>basic html</h5>
+  <h6>basic html</h6>
+  <p>paragraf</p>
+  <img src="img/w3schools.jpg" alt="w3schools.com" width="200" height="200" />
+
+  <a href="https://roadmap.sh/frontend">roadmap for frontend developer</a>
+  <p>
+    paragraf with a <br />
+    line break
+  </p>
+  <p>
+    <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet
+      debitis officia cupiditate alias dolorem recusandae aliquid, beatae
+      assumenda. Enim in laudantium at aspernatur harum ex quos odio deleniti
+      neque. -->
+  </p>
+  <hr />
+  <p class="testingTegHr" style="text-align: left">
+    <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Maiores
+    iste veniam recusandae pariatur tenetur, quaerat reprehenderit aperiam
+    ratione rem facilis sequi modi nisi,
+    <span style="font-weight: bold">inventore illum esse quo dolorum molestiae. Suscipit?</span>
+  </p>
+  <hr style="height: 5px; border-width: 0; color: gray; background-color: gray" />
+  <p class="testingTegHr">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+    voluptatibus, debitis veritatis modi facere obcaecati laboriosam? Illo id
+    consequatur labore velit harum quia quisquam, quam iusto ab quae fugiat
+    ex!
+  </p>
+  <hr style="width: 50%; text-align: left; margin-left: 0%" />
+  <p class="testingTegHr">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, ipsa
+    nesciunt doloremque at quasi dolor. Quos voluptatem obcaecati voluptate ab
+    sed quae dicta illo inventore? Amet velit minus accusantium cum.
+  </p>
+
+  <h3>teg abbr</h3>
+  <p>
+    The <abbr title="Cascading Style Sheets">CSS</abbr> use for style html
+    page
+  </p>
+
+  <h3>teg addres</h3>
+  <address>
+    Writen by: <a href="mailto:webmaster@example.com">Djon Doe</a> Visit as
+    at: <br />
+    Example.com <br />
+    Box 564, DisneyLand <br />
+    USA
+  </address>
+  <h3>The element bdi</h3>
+  <p>
+    У прикладі нижче показано імена користувачів разом із кількістю балів у
+    конкурсі. <code>Якщо елемент bdi не підтримується в браузері</code>, ім’я
+    користувача користувача арабською мовою заплутає текст (двонаправлений
+    алгоритм поставить двокрапку та число «90» біля слова «Користувач», а не
+    біля слова «точки» ").
+  </p>
+  <ul>
+    <li>user <bdi>Djon</bdi> : 90 points</li>
+    <li>user <bdi>Den</bdi> : 80 points</li>
+    <li>user <bdi>Dreyk</bdi> : 70 points</li>
+  </ul>
+  <h3>The bdo element</h3>
+  <p>This is paragraf wil be go from left to right</p>
+  <p><bdo dir="rtl">This is paragraf wil be go from-right to-left</bdo></p>
+  <blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">
+    The blockquote tag specifies a section that is quoted from another source.
+    <dfn>Browsers</dfn> usually indent blockquote elements (look at example
+    below to see how to remove the indentation).
+  </blockquote>
+  <h3>The cite element</h3>
+  <img src="img/img_the_scream.jpg" width="220" height="277" alt="The scream" />
+  <p>
+    <cite>The scream</cite> by
+    <dfn> <abbr title="famous pointer">Edward Munch</abbr></dfn>. Painted in 1893.
+  </p>
+  <h3>The element inst & del</h3>
+  <p>My favorite <em> color</em> is <del> blue </del><ins> red</ins></p>
+  <h3>The kbd element</h3>
+  <p>
+    Press <kbd>Ctrl</kbd> + <kbd>C</kbd> for copy text <mark>(Windows)</mark>
+  </p>
+  <h3>The meter & label elements</h3>
+  <label for="disk_C">Disk usage C:</label>
+  <meter id="disk_C" value="5" min="0" max="10">2 out of 10</meter><br />
+  <label for="disk_D">Disk usage D:</label>
+  <meter id="disk-D" value="0.8">80%</meter>
+
+  <h3>The element pre</h3>
+  <pre>
+      Yarovyk
+      Denys
+      Fedorovych
+    </pre>
+  <div style="width: 200px; overflow: auto">
+    <pre>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque reiciendis sapiente ut? <q>Iste voluptate optio magnam pariatur eveniet?</q> <s>Debitis doloremque, sit perferendis vitae voluptates harum illo deserunt iure inventore impedit?</s>
+      </pre>
+  </div>
+  <h3>the element progres</h3>
+  <label for="file">Downloading progress:</label>
+  <progress id="file" value="32" max="100">32%</progress>
+
+  <h3>The samp element</h3>
+
+  <p><samp>program is not found <br> press enter to continue</br></samp></p>
+
+  <h3>The small element</h3>
+
+  <p>Lorem ipsum dolor, <small>sit amet consectetur adipisicing elit</small>. Eaque <sup>deserunt</sup> iure distinctio repudiandae eveniet porro
+    vero quis <strong>officia culpa consequuntur quibusdam</strong> minima obcaecati <sub>veritatis</sub> non, corporis asperiores maxime?
+    Doloribus, quos.</p>
+  
+  <h3>The element Time</h3>
+
+  <p>Open from <time>11:10</time> to <time>11:20</time> every morning</p>
+  <p>I just chek element time <time datetime="2023-03-06 11:10"></time></p>
+
+  <h3>The u element</h3>
+    <p>The some <u class="mispeledText">mispeled</u> text</p>
+
+  
+    <h3>The form element</h3>
+    <form action="/action_page_php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h3>The form element</h3>
+    <form action="/action_page_php" method="get">
+      <input type="checkbox" name="vehicle1" value="Bike">
+      <label for="vehicle1">I have a bike!</label><br>
+      <input type="checkbox" name="vehicle2" value="Car">
+      <label for="vehicle2">I have a car</label><br>
+      <input type="checkbox" name="vehicle3" value="Boat">
+      <label for="vehicle3">I have a boat</label><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h3>The form element</h3>
+    <form action="/action_page_php" method="get">
+      <input type="radio" id="html" name="fav-language" value="HTML">
+      <label for="HTML">HTML</label><br>
+      <input type="radio" id="css" name="fav-language" value="CSS" checked="checked">
+      <label for="CSS">CSS</label><br>
+      <input type="radio" id="javascript" name="fav-language" value="javascript">
+      <label for="javascript">JavaScript</label><br>
+      <input type="submit" value="Submit">
+    </form>
+
+  <h3>The textarea element</h3>
+  <form action="/action_page_php">
+    <label for="w3review">W3schooll review </label><br>
+    <textarea name="w3review" id="w3review" cols="50" rows="4">
+      At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+    </textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>The element button</h3>
+  <button type="button" onclick="alert('Hello world!')">Click me</button>
+
+  <h3>The element button + CSS</h3>
+  <div class="butoon">
+    <button class="button1">Green</button>
+    <button class="button2">Blue</button>
+  </div>
+
+  <h3>The select and optgroup element</h3>
+
+  <form action="/action_page_php">
+    <label for="cars">Choose a car!</label>
+    <select name="cars" id="cars">
+      <optgroup label="UK cars">
+        <option value="mini">Mini cooper</option>
+        <option value="landrover">Landrover</option>
+      </optgroup>
+      <optgroup label="USA cars">
+        <option value="jeep">Jeep</option>
+        <option value="ford">Ford</option>
+      </optgroup>
+      <optgroup label="Jupen cars">
+        <option value="toyota">Toyota</option>
+        <option value="mazda">Mazda</option>
+      </optgroup>
+    </select><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>The fieldset element</h3>
+
+  <form action="/action_page_php">
+    <fieldset>
+      <legend style="float: right;">Personality data</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Emeil</label>
+      <input type="text" id="emeil" name="emeil"><br><br>
+      <label for="birthday">Birthday</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <h3>The datalist element</h3>
+
+  <form action="/action_page_php" method="get">
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" id="browser" name="browser">
+    <datalist id="browsers">
+      <option value="Chrome">Chrome</option>
+      <option value="Opera">Opera</option>
+      <option value="Mazila">Mazila</option>
+    </datalist>
+    <input type="submit">
+  </form>
+
+  <h3>The output element</h3>
+
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50">
+    +<input type="number" id="b" value="25">=<output name="x" for="a b"></output>
+  </form>
+
+  <h3>The iframe element</h3>
+
+  <p>An iframe with default borders:</p>
+  <iframe src="https://www.w3schools.com/default.asp" width="50%" height="300"></iframe>
+  <p>>An iframe with a thin black border:</p>
+  <iframe src="/default.asp" width="50%" height="300" style="border: 1px solid black;"></iframe>
+  <p>An iframe with no borders:</p>
+  <iframe src="/default.asp" width="50%" height="300" style="border: none;" ></iframe>
+
+  <h3>The align image with css</h3>
+  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="vertical-align: bottom;">This is some text.This is some text.</p>
+  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="vertical-align: top;">This is some text.</p>
+  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="vertical-align: middle;"></p>
+  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="float:left">This is some text.</p>
+  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="float: right;"></p>
+
+  <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="border: 5px solid black;"><br>
+  <img src="https://www.w3schools.com/images/lamp.jpg" alt="lamp" width="32" height="32">
+
+  <h3>The map and area elements</h3>
+
+  <img src="/img/workplace.jpg" alt="workplace" width="400" height="379">
+  <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" href="computer.html" alt="computer">
+    <area shape="rect" coords="290,172,333,250" href="phone.html" alt="phone">
+    <area shape="circl" coords="337,300,44" href="cofee.html" alt="cup of cofee">
+  </map>
+
+
+
+
+
+
+
+
+
+    <h3>The template element</h3>
+
+    <button onclick="showContent()">Show hidden content</button>
+
+    <template>
+      <div class="useJs">I like!</div>
+    </template>
+
+
+    <script>
+      let myArr = ['Audi', 'BMW', 'Ford', 'Toyota'];
+
+      function showContent() {
+        let temp, item, a, i;
+        temp = document.getElementsByTagName('template')[0];
+        item = temp.content.querySelector('div');
+        for (i = 0; i <myArr.length; i++) {
+          a = document.importNode(item, true);
+          a.textContent += myArr[i];
+          document.body.appendChild(a);
+        };
+      };
+
+    </script>
+  
+</body>
+
+</html>
