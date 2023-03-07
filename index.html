@@ -92,6 +92,19 @@
       color: white;
     }
 
+    figure {
+      padding: 4px;
+      margin: auto;
+      border: #cccccc solid;
+    }
+
+    figcaption {
+      background-color: black;
+      color: white;
+      padding: 2px;
+      text-align: center;
+    }
+
   </style>
 </head>
 
@@ -352,14 +365,68 @@
 
   <h3>The map and area elements</h3>
 
-  <img src="/img/workplace.jpg" alt="workplace" width="400" height="379">
+  <img src="/img/workplace.jpg" alt="workplace" usemap="#workmap" width="400" height="379">
   <map name="workmap">
-    <area shape="rect" coords="34,44,270,350" href="computer.html" alt="computer">
-    <area shape="rect" coords="290,172,333,250" href="phone.html" alt="phone">
-    <area shape="circl" coords="337,300,44" href="cofee.html" alt="cup of cofee">
+    <area shape="rect" coords="34,44,270,350" href="https://rozetka.com.ua/asus-90nb0y41-m003m0/p358208829/" alt="computer">
+    <area shape="rect" coords="290,172,333,250" href="https://rozetka.com.ua/samsung-sm-a536ezodsek/p340365477/" alt="phone">
+    <area shape="circl" coords="337,300,44,54" href="https://rozetka.com.ua/359894739/p359894739/" alt="cup of cofee">
   </map>
 
+  <!-- <h3>The canvas element</h3>
 
+  <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+  <script>
+    let c = document.getElementById('myCanvas');
+    let ctx = getContext('2d');
+    ctx.fillStyle = 'red';
+    ctx.fillRect = (20, 20, 75, 50);
+
+    ctx.globalAlpha = 0.2;
+    ctx.fillStyle = 'blue';
+    ctx.fillRect = (20, 20, 75, 50);
+    ctx.fillStyle = 'green';
+    ctx.fillRect = (20, 20, 75, 59);
+  </script> -->
+
+  <h3>The element figure & figcaption</h3>
+
+  <figure>
+    <img src="/img/pic_trulli.jpg" alt="Trulli">
+    <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+  </figure>
+
+  <h3>The picture element</h3>
+  <picture>
+    <source media="(min-width: 650px)" srcset="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_picture">
+    <source media="(min-width: 450px)" srcset="">
+    <img src="/img/img_pink_flowers.jpg" alt="flowers" style="width: auto;">
+  </picture>
+
+  <h3>The svg element</h3>
+  <svg width="100%" height="100%">
+    <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="10" fill="Dodgerblue"/>
+  </svg>
+
+  <svg width="300" height="150">
+    <rect width="300" height="150" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+  </svg><br>
+
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+    style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+</svg><br>
+
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:cornflowerblue;stroke:purple;stroke-width: 5;fill-rule: evenodd;"/> 
+</svg>
+
+<h3>The audio element</h3>
+<audio controls>
+  <source src="/audio/horse.ogv" type="audio/ogg">
+</audio>
+
+ 
 
 
 
