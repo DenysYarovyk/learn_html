@@ -6,12 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>example</title>
+  <link rel="stylesheet" href="/styles.css">
   <style>
-    body {
-      background-color: rgb(179, 117, 117);
-      color: rgb(20, 20, 62);
-    }
-
     a:link {
       color: azure;
     }
@@ -103,6 +99,12 @@
       color: white;
       padding: 2px;
       text-align: center;
+    }
+
+    table,th,td {
+      border: 1px solid black;
+      margin-left: auto;
+      margin-right: auto;
     }
 
   </style>
@@ -426,8 +428,282 @@
   <source src="/audio/horse.ogv" type="audio/ogg">
 </audio>
 
- 
+<h3>The video element</h3>
+<video width="320" height="240" controls>
+  <source src="/video/movie.mp4" type="video/mp4">
+  <source src="/video/movie.ogg" type="video/ogg">
+</video>
 
+<h3>The a element (An image as a link:)</h3>
+<a href="https://www.w3schools.com">
+  <img src="/img/logo_w3s.gif" alt="logo" width="100" height="100" style="background-color: whitesmoke;">
+</a>
+
+<h3>The a target attribute</h3>
+<a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
+
+<p>
+  <a href="mailto:denisarovik@gmail.com">Send emeil</a>
+</p>
+<p>
+  <a href="tel:+380999452122">+380999452122</a>
+</p>
+<a href="javascript:alert('Hello World!')"> Execute javascript</a>
+
+<h3>The nav element</h3>
+<nav>
+  <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a><br>
+  <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a><br>
+  <a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a><br>
+  <a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank">BOOTSTRAP</a><br>
+</nav>
+
+<h3>The element ul (All the different list types for ul with CSS)</h3>
+<div class="ul1">
+  <ul style="list-style-type: circle;">
+    <li>milk</li>
+    <li>tea</li>
+    <li>cofee</li>
+  </ul>
+</div>
+<div class="ul2">
+  <ul style="list-style-type: square;">
+    <li>milk</li>
+    <li>tea</li>
+    <li>cofee</li>
+  </ul>
+</div>
+<ul style="list-style-type: disc;">
+  <li>milk</li>
+  <li>tea</li>
+  <li>cofee</li>
+</ul>
+<!-- A list inside another list -->
+<ul>
+  <li>milk</li>
+  <li>cofee</li>
+  <li>tea
+    <ul>
+      <li>green tea</li>
+      <li>black tea
+        <ul>
+          <li>Afryka
+            <ul>
+              <li>Central afryka</li>
+              <li>North afryka</li>
+            </ul>
+          </li>
+          <li>Chine
+            <ul>
+              <li>North area</li>
+              <li>South area</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3>The ol element</h3>
+
+<ol class="d">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="s">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="a">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="p">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="o">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="i">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="u">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="y">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="t">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="r">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="e">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="w">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+<ol class="q">
+  <li>Milk</li>
+  <li>tea</li>
+  <li>cofea</li>
+</ol>
+
+<h3>The dl, dt, dd elements</h3>
+<dl>
+  <dt>tea</dt>
+  <dd>hot drink, can be green, black, fruity</dd>
+  <dt>milk</dt>
+  <dd>whild cold drink</dd>
+</dl>
+
+<h3>The elements table, tr, th and td</h3>
+<table>
+  <tr>
+    <th>Nonth</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>September</td>
+    <td>100 $</td>
+  </tr>
+  <tr>
+    <td>November</td>
+    <td>80 $</td>
+  </tr>
+</table>
+
+<!-- Table with Collapsed Borders -->
+<table class="tableCollapsedBorder">
+  <caption class="captionStyle">Monthly saving</caption>
+  <tr>
+    <th>Nonth</th>
+    <th>Savings</th>
+    <th colspan="3">Phone</th>
+  </tr>
+  <tr>
+    <td>September</td>
+    <td>100 $</td>
+  </tr>
+  <tr>
+    <td>November</td>
+    <td>80 $</td>
+  </tr>
+  <tr>
+    <td>+380999999999</td>
+    <td>+380998888888</td>
+    <td>+380997777777</td>
+  </tr>
+</table>
+
+<table>
+  <caption style="text-align: right;">Monthly saving</caption>
+  <tr>
+    <th>Name</th>
+    <th>Nonth</th>
+    <th>Savings</th>
+    <th colspan="3">Phone</th>
+  </tr>
+  <tr>
+    <td>Djon Doe</td>
+    <td>September</td>
+    <td>100 $</td>
+    <td>+380999999999</td>
+    <td>+380998888888</td>
+    <td>+380997777777</td>
+  </tr>
+  <tr>
+    <td>Anna Doe</td>
+    <td>September</td>
+    <td>150 $</td>
+    <td>+38099679999</td>
+    <td>+380998888988</td>
+    <td>+380997777790</td>
+  </tr>
+</table>
+<!-- Horizontal headers, and caption element: -->
+
+<table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <td>September</td>
+    <td>December</td>
+  </tr>
+  <tr>
+    <th>Savings</th>
+    <td>100 $</td>
+    <td>80 $</td>
+  </tr>
+  <tr>
+    <th rowspan="2">phone</th>
+    <td>+380999452120</td>
+    <td>Djon Doe</td>
+  </tr>
+  <tr>
+    <td>+380999452121</td>
+    <td>Djon Doe</td>
+  </tr>
+</table>
+
+<table width="100%">
+  <caption>Monthly saving</caption>
+  <colgroup>
+    <col style="background-color: yellow;">
+    <col span="1" style="background-color: brown;">
+    <col span="1" style="background-color: pink;">
+  </colgroup>
+  <thead class="theadTable">
+    <tr style="height: 100px;">
+      <th>Month</th>
+      <th>saving</th>
+      <th>Day</th>
+    </tr>
+  </thead>
+  <tbody style="color: blue;">
+    <tr>
+      <td>September</td>
+      <td>100 $</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>November</td>
+      <td>80 $</td>
+      <td>31</td>
+    </tr>
+  </tbody>
+  <tfoot style="color: red;">
+    <tr>
+      <td>Sum</td>
+      <td>180 $</td>
+      <td>61</td>
+    </tr>
+  </tfoot>
+</table>
 
 
 
