@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(166, 166, 227);
+    background-color: rgb(156, 156, 249);
     color: black;
 }
 
@@ -70,4 +70,61 @@ th,td {
     color: green;
     text-align: left;
     vertical-align: bottom;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 5px;
+}
+main {
+    margin: 0;
+    padding: 10px;
+    background-color: bisque;
+}
+
+main > h1, p, .articleMain {
+    margin: 10px;
+    padding: 5px;
+}
+
+.articleMain {
+    background-color: rgb(245, 202, 149);
+}
+
+.articleMain {
+    margin: 4px;
+    font-size: 90%;
+}
+
+aside {
+    width: 25%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: inherit;
+    background-color: rgb(175, 251, 226);
+    box-shadow: 5px 5px 10px;
+}
+
+details > summary {
+    padding: 4px;
+    width: 200px;
+    background-color: goldenrod;
+    border: none;
+    box-shadow: 10px 10px 25px;
+    cursor: pointer;
+}
+
+details > p {
+    margin: 0;
+    padding: 4px;
+    box-shadow: 10px 10px 20px;
+}
+
+.buttonJs > button {
+    background-color: rgb(54, 44, 37);
+    color: white;
+    box-shadow: 5px 5px 10px;
 }

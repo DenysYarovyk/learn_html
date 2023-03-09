@@ -2,11 +2,16 @@
 <html lang="en">
 
 <head>
+  <meta name="keywords" content="HTML, CSS, JS"/>
+  <meta name="description" content="Lear html tegs"/>
+  <meta name="author" content="Denys Yar"/>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <base href="https://www.w3schools.com/" target="_blank"> -->
   <title>example</title>
   <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js"></script>
   <style>
     a:link {
       color: azure;
@@ -47,6 +52,7 @@
       text-align: center;
       margin: 10px;
     }
+
     .mispeledText {
       text-decoration-color: red;
       text-decoration-line: underline;
@@ -101,16 +107,21 @@
       text-align: center;
     }
 
-    table,th,td {
+    table,
+    th,
+    td {
       border: 1px solid black;
       margin-left: auto;
       margin-right: auto;
     }
-
   </style>
 </head>
 
+
 <body>
+  <header>
+    <h1 style="text-align: center; color:rgb(42, 58, 28);">learn tegs HTML</h1>
+  </header>
   <h1 style="background-color: rgb(85, 85, 149)">basic html</h1>
   <h2 style="color: rgb(6, 6, 34)">basic html</h2>
   <h3>basic html</h3>
@@ -226,49 +237,51 @@
 
   <h3>The small element</h3>
 
-  <p>Lorem ipsum dolor, <small>sit amet consectetur adipisicing elit</small>. Eaque <sup>deserunt</sup> iure distinctio repudiandae eveniet porro
-    vero quis <strong>officia culpa consequuntur quibusdam</strong> minima obcaecati <sub>veritatis</sub> non, corporis asperiores maxime?
+  <p>Lorem ipsum dolor, <small>sit amet consectetur adipisicing elit</small>. Eaque <sup>deserunt</sup> iure distinctio
+    repudiandae eveniet porro
+    vero quis <strong>officia culpa consequuntur quibusdam</strong> minima obcaecati <sub>veritatis</sub> non, corporis
+    asperiores maxime?
     Doloribus, quos.</p>
-  
+
   <h3>The element Time</h3>
 
   <p>Open from <time>11:10</time> to <time>11:20</time> every morning</p>
   <p>I just chek element time <time datetime="2023-03-06 11:10"></time></p>
 
   <h3>The u element</h3>
-    <p>The some <u class="mispeledText">mispeled</u> text</p>
+  <p>The some <u class="mispeledText">mispeled</u> text</p>
 
-  
-    <h3>The form element</h3>
-    <form action="/action_page_php">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <label for="lname">Last name:</label>
-      <input type="text" id="lname" name="lname"><br><br>
-      <input type="submit" value="Submit">
-    </form>
 
-    <h3>The form element</h3>
-    <form action="/action_page_php" method="get">
-      <input type="checkbox" name="vehicle1" value="Bike">
-      <label for="vehicle1">I have a bike!</label><br>
-      <input type="checkbox" name="vehicle2" value="Car">
-      <label for="vehicle2">I have a car</label><br>
-      <input type="checkbox" name="vehicle3" value="Boat">
-      <label for="vehicle3">I have a boat</label><br>
-      <input type="submit" value="Submit">
-    </form>
+  <h3>The form element</h3>
+  <form action="/action_page_php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
 
-    <h3>The form element</h3>
-    <form action="/action_page_php" method="get">
-      <input type="radio" id="html" name="fav-language" value="HTML">
-      <label for="HTML">HTML</label><br>
-      <input type="radio" id="css" name="fav-language" value="CSS" checked="checked">
-      <label for="CSS">CSS</label><br>
-      <input type="radio" id="javascript" name="fav-language" value="javascript">
-      <label for="javascript">JavaScript</label><br>
-      <input type="submit" value="Submit">
-    </form>
+  <h3>The form element</h3>
+  <form action="/action_page_php" method="get">
+    <input type="checkbox" name="vehicle1" value="Bike">
+    <label for="vehicle1">I have a bike!</label><br>
+    <input type="checkbox" name="vehicle2" value="Car">
+    <label for="vehicle2">I have a car</label><br>
+    <input type="checkbox" name="vehicle3" value="Boat">
+    <label for="vehicle3">I have a boat</label><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>The form element</h3>
+  <form action="/action_page_php" method="get">
+    <input type="radio" id="html" name="fav-language" value="HTML">
+    <label for="HTML">HTML</label><br>
+    <input type="radio" id="css" name="fav-language" value="CSS" checked="checked">
+    <label for="CSS">CSS</label><br>
+    <input type="radio" id="javascript" name="fav-language" value="javascript">
+    <label for="javascript">JavaScript</label><br>
+    <input type="submit" value="Submit">
+  </form>
 
   <h3>The textarea element</h3>
   <form action="/action_page_php">
@@ -326,7 +339,7 @@
     </fieldset>
   </form>
 
-  <h3>The datalist element</h3>
+  <h3 style="color: orange;">The datalist element</h3>
 
   <form action="/action_page_php" method="get">
     <label for="browser">Choose your browser from the list:</label>
@@ -353,13 +366,17 @@
   <p>>An iframe with a thin black border:</p>
   <iframe src="/default.asp" width="50%" height="300" style="border: 1px solid black;"></iframe>
   <p>An iframe with no borders:</p>
-  <iframe src="/default.asp" width="50%" height="300" style="border: none;" ></iframe>
+  <iframe src="/default.asp" width="50%" height="300" style="border: none;"></iframe>
 
   <h3>The align image with css</h3>
-  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="vertical-align: bottom;">This is some text.This is some text.</p>
-  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="vertical-align: top;">This is some text.</p>
-  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="vertical-align: middle;"></p>
-  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="float:left">This is some text.</p>
+  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42"
+      style="vertical-align: bottom;">This is some text.This is some text.</p>
+  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="vertical-align: top;">This
+    is some text.</p>
+  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="vertical-align: middle;">
+  </p>
+  <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="float:left">This is some
+    text.</p>
   <p>This is some text. <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="float: right;"></p>
 
   <img src="/img/smiley.gif" alt="smiley" width="42" height="42" style="border: 5px solid black;"><br>
@@ -369,8 +386,10 @@
 
   <img src="/img/workplace.jpg" alt="workplace" usemap="#workmap" width="400" height="379">
   <map name="workmap">
-    <area shape="rect" coords="34,44,270,350" href="https://rozetka.com.ua/asus-90nb0y41-m003m0/p358208829/" alt="computer">
-    <area shape="rect" coords="290,172,333,250" href="https://rozetka.com.ua/samsung-sm-a536ezodsek/p340365477/" alt="phone">
+    <area shape="rect" coords="34,44,270,350" href="https://rozetka.com.ua/asus-90nb0y41-m003m0/p358208829/"
+      alt="computer">
+    <area shape="rect" coords="290,172,333,250" href="https://rozetka.com.ua/samsung-sm-a536ezodsek/p340365477/"
+      alt="phone">
     <area shape="circl" coords="337,300,44,54" href="https://rozetka.com.ua/359894739/p359894739/" alt="cup of cofee">
   </map>
 
@@ -406,335 +425,413 @@
 
   <h3>The svg element</h3>
   <svg width="100%" height="100%">
-    <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="10" fill="Dodgerblue"/>
+    <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="10" fill="Dodgerblue" />
   </svg>
 
   <svg width="300" height="150">
     <rect width="300" height="150" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
   </svg><br>
 
-<svg width="400" height="180">
-  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
-    style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
-</svg><br>
+  <svg width="400" height="180">
+    <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+      style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+  </svg><br>
 
-<svg width="300" height="200">
-  <polygon points="100,10 40,198 190,78 10,78 160,198"
-  style="fill:cornflowerblue;stroke:purple;stroke-width: 5;fill-rule: evenodd;"/> 
-</svg>
+  <svg width="300" height="200">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+      style="fill:cornflowerblue;stroke:purple;stroke-width: 5;fill-rule: evenodd;" />
+  </svg>
 
-<h3>The audio element</h3>
-<audio controls>
-  <source src="/audio/horse.ogv" type="audio/ogg">
-</audio>
+  <h3>The audio element</h3>
+  <audio controls>
+    <source src="/audio/horse.ogv" type="audio/ogg">
+  </audio>
 
-<h3>The video element</h3>
-<video width="320" height="240" controls>
-  <source src="/video/movie.mp4" type="video/mp4">
-  <source src="/video/movie.ogg" type="video/ogg">
-</video>
+  <h3>The video element</h3>
+  <video width="320" height="240" controls>
+    <source src="/video/movie.mp4" type="video/mp4">
+    <source src="/video/movie.ogg" type="video/ogg">
+  </video>
 
-<h3>The a element (An image as a link:)</h3>
-<a href="https://www.w3schools.com">
-  <img src="/img/logo_w3s.gif" alt="logo" width="100" height="100" style="background-color: whitesmoke;">
-</a>
+  <h3>The a element (An image as a link:)</h3>
+  <a href="https://www.w3schools.com">
+    <img src="/img/logo_w3s.gif" alt="logo" width="100" height="100" style="background-color: whitesmoke;">
+  </a>
 
-<h3>The a target attribute</h3>
-<a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
+  <h3>The a target attribute</h3>
+  <a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
 
-<p>
-  <a href="mailto:denisarovik@gmail.com">Send emeil</a>
-</p>
-<p>
-  <a href="tel:+380999452122">+380999452122</a>
-</p>
-<a href="javascript:alert('Hello World!')"> Execute javascript</a>
+  <p>
+    <a href="mailto:denisarovik@gmail.com">Send emeil</a>
+  </p>
+  <p>
+    <a href="tel:+380999452122">+380999452122</a>
+  </p>
+  <a href="javascript:alert('Hello World!')"> Execute javascript</a>
 
-<h3>The nav element</h3>
-<nav>
-  <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a><br>
-  <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a><br>
-  <a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a><br>
-  <a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank">BOOTSTRAP</a><br>
-</nav>
+  <h3>The nav element</h3>
+  <nav>
+    <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a><br>
+    <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a><br>
+    <a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a><br>
+    <a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank">BOOTSTRAP</a><br>
+  </nav>
 
-<h3>The element ul (All the different list types for ul with CSS)</h3>
-<div class="ul1">
-  <ul style="list-style-type: circle;">
-    <li>milk</li>
-    <li>tea</li>
-    <li>cofee</li>
-  </ul>
-</div>
-<div class="ul2">
-  <ul style="list-style-type: square;">
-    <li>milk</li>
-    <li>tea</li>
-    <li>cofee</li>
-  </ul>
-</div>
-<ul style="list-style-type: disc;">
-  <li>milk</li>
-  <li>tea</li>
-  <li>cofee</li>
-</ul>
-<!-- A list inside another list -->
-<ul>
-  <li>milk</li>
-  <li>cofee</li>
-  <li>tea
-    <ul>
-      <li>green tea</li>
-      <li>black tea
-        <ul>
-          <li>Afryka
-            <ul>
-              <li>Central afryka</li>
-              <li>North afryka</li>
-            </ul>
-          </li>
-          <li>Chine
-            <ul>
-              <li>North area</li>
-              <li>South area</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
+  <h3>The element ul (All the different list types for ul with CSS)</h3>
+  <div class="ul1">
+    <ul style="list-style-type: circle;">
+      <li>milk</li>
+      <li>tea</li>
+      <li>cofee</li>
     </ul>
-  </li>
-</ul>
+  </div>
+  <div class="ul2">
+    <ul style="list-style-type: square;">
+      <li>milk</li>
+      <li>tea</li>
+      <li>cofee</li>
+    </ul>
+  </div>
+  <ul style="list-style-type: disc;">
+    <li>milk</li>
+    <li>tea</li>
+    <li>cofee</li>
+  </ul>
+  <!-- A list inside another list -->
+  <ul>
+    <li>milk</li>
+    <li>cofee</li>
+    <li>tea
+      <ul>
+        <li>green tea</li>
+        <li>black tea
+          <ul>
+            <li>Afryka
+              <ul>
+                <li>Central afryka</li>
+                <li>North afryka</li>
+              </ul>
+            </li>
+            <li>Chine
+              <ul>
+                <li>North area</li>
+                <li>South area</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
 
-<h3>The ol element</h3>
+  <h3>The ol element</h3>
 
-<ol class="d">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="s">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="a">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="p">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="o">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="i">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="u">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="y">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="t">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="r">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="e">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="w">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
-<ol class="q">
-  <li>Milk</li>
-  <li>tea</li>
-  <li>cofea</li>
-</ol>
+  <ol class="d">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="s">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="a">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="p">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="o">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="i">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="u">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="y">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="t">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="r">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="e">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="w">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
+  <ol class="q">
+    <li>Milk</li>
+    <li>tea</li>
+    <li>cofea</li>
+  </ol>
 
-<h3>The dl, dt, dd elements</h3>
-<dl>
-  <dt>tea</dt>
-  <dd>hot drink, can be green, black, fruity</dd>
-  <dt>milk</dt>
-  <dd>whild cold drink</dd>
-</dl>
+  <h3>The dl, dt, dd elements</h3>
+  <dl>
+    <dt>tea</dt>
+    <dd>hot drink, can be green, black, fruity</dd>
+    <dt>milk</dt>
+    <dd>whild cold drink</dd>
+  </dl>
 
-<h3>The elements table, tr, th and td</h3>
-<table>
-  <tr>
-    <th>Nonth</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <td>September</td>
-    <td>100 $</td>
-  </tr>
-  <tr>
-    <td>November</td>
-    <td>80 $</td>
-  </tr>
-</table>
-
-<!-- Table with Collapsed Borders -->
-<table class="tableCollapsedBorder">
-  <caption class="captionStyle">Monthly saving</caption>
-  <tr>
-    <th>Nonth</th>
-    <th>Savings</th>
-    <th colspan="3">Phone</th>
-  </tr>
-  <tr>
-    <td>September</td>
-    <td>100 $</td>
-  </tr>
-  <tr>
-    <td>November</td>
-    <td>80 $</td>
-  </tr>
-  <tr>
-    <td>+380999999999</td>
-    <td>+380998888888</td>
-    <td>+380997777777</td>
-  </tr>
-</table>
-
-<table>
-  <caption style="text-align: right;">Monthly saving</caption>
-  <tr>
-    <th>Name</th>
-    <th>Nonth</th>
-    <th>Savings</th>
-    <th colspan="3">Phone</th>
-  </tr>
-  <tr>
-    <td>Djon Doe</td>
-    <td>September</td>
-    <td>100 $</td>
-    <td>+380999999999</td>
-    <td>+380998888888</td>
-    <td>+380997777777</td>
-  </tr>
-  <tr>
-    <td>Anna Doe</td>
-    <td>September</td>
-    <td>150 $</td>
-    <td>+38099679999</td>
-    <td>+380998888988</td>
-    <td>+380997777790</td>
-  </tr>
-</table>
-<!-- Horizontal headers, and caption element: -->
-
-<table>
-  <caption>Monthly savings</caption>
-  <tr>
-    <th>Month</th>
-    <td>September</td>
-    <td>December</td>
-  </tr>
-  <tr>
-    <th>Savings</th>
-    <td>100 $</td>
-    <td>80 $</td>
-  </tr>
-  <tr>
-    <th rowspan="2">phone</th>
-    <td>+380999452120</td>
-    <td>Djon Doe</td>
-  </tr>
-  <tr>
-    <td>+380999452121</td>
-    <td>Djon Doe</td>
-  </tr>
-</table>
-
-<table width="100%">
-  <caption>Monthly saving</caption>
-  <colgroup>
-    <col style="background-color: yellow;">
-    <col span="1" style="background-color: brown;">
-    <col span="1" style="background-color: pink;">
-  </colgroup>
-  <thead class="theadTable">
-    <tr style="height: 100px;">
-      <th>Month</th>
-      <th>saving</th>
-      <th>Day</th>
+  <h3>The elements table, tr, th and td</h3>
+  <table>
+    <tr>
+      <th>Nonth</th>
+      <th>Savings</th>
     </tr>
-  </thead>
-  <tbody style="color: blue;">
     <tr>
       <td>September</td>
       <td>100 $</td>
-      <td>30</td>
     </tr>
     <tr>
       <td>November</td>
       <td>80 $</td>
-      <td>31</td>
     </tr>
-  </tbody>
-  <tfoot style="color: red;">
+  </table>
+
+  <!-- Table with Collapsed Borders -->
+  <table class="tableCollapsedBorder">
+    <caption class="captionStyle">Monthly saving</caption>
     <tr>
-      <td>Sum</td>
-      <td>180 $</td>
-      <td>61</td>
+      <th>Nonth</th>
+      <th>Savings</th>
+      <th colspan="3">Phone</th>
     </tr>
-  </tfoot>
-</table>
+    <tr>
+      <td>September</td>
+      <td>100 $</td>
+    </tr>
+    <tr>
+      <td>November</td>
+      <td>80 $</td>
+    </tr>
+    <tr>
+      <td>+380999999999</td>
+      <td>+380998888888</td>
+      <td>+380997777777</td>
+    </tr>
+  </table>
+
+  <table>
+    <caption style="text-align: right;">Monthly saving</caption>
+    <tr>
+      <th>Name</th>
+      <th>Nonth</th>
+      <th>Savings</th>
+      <th colspan="3">Phone</th>
+    </tr>
+    <tr>
+      <td>Djon Doe</td>
+      <td>September</td>
+      <td>100 $</td>
+      <td>+380999999999</td>
+      <td>+380998888888</td>
+      <td>+380997777777</td>
+    </tr>
+    <tr>
+      <td>Anna Doe</td>
+      <td>September</td>
+      <td>150 $</td>
+      <td>+38099679999</td>
+      <td>+380998888988</td>
+      <td>+380997777790</td>
+    </tr>
+  </table>
+  <!-- Horizontal headers, and caption element: -->
+
+  <table>
+    <caption>Monthly savings</caption>
+    <tr>
+      <th>Month</th>
+      <td>September</td>
+      <td>December</td>
+    </tr>
+    <tr>
+      <th>Savings</th>
+      <td>100 $</td>
+      <td>80 $</td>
+    </tr>
+    <tr>
+      <th rowspan="2">phone</th>
+      <td>+380999452120</td>
+      <td>Djon Doe</td>
+    </tr>
+    <tr>
+      <td>+380999452121</td>
+      <td>Djon Doe</td>
+    </tr>
+  </table>
+
+  <table width="100%">
+    <caption>Monthly saving</caption>
+    <colgroup>
+      <col style="background-color: yellow;">
+      <col span="1" style="background-color: brown;">
+      <col span="1" style="background-color: pink;">
+    </colgroup>
+    <thead class="theadTable">
+      <tr style="height: 100px;">
+        <th>Month</th>
+        <th>saving</th>
+        <th>Day</th>
+      </tr>
+    </thead>
+    <tbody style="color: blue;">
+      <tr>
+        <td>September</td>
+        <td>100 $</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>November</td>
+        <td>80 $</td>
+        <td>31</td>
+      </tr>
+    </tbody>
+    <tfoot style="color: red;">
+      <tr>
+        <td>Sum</td>
+        <td>180 $</td>
+        <td>61</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h3>The span element</h3>
+  <p>Lorem ipsum dolor, <span style="color:#008CBA; font-weight: bold;">blue</span> sit amet consectetur adipisicing
+    elit. Officiis deserunt aperiam obcaecati voluptates dolorum
+    soluta hic eum autem repudiandae libero maiores cum atque, <span
+      style="color: green; font-weight:bolder;">Green</span> natus, ab dignissimos aut inventore incidunt vitae!</p>
+
+  <h3>The element main & article</h3>
+  <main>
+    <h1>Most Popular Browsers</h1>
+    <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+    <article class="articleMain">
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web
+        browser today!</p>
+    </article>
+    <article class="articleMain">
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular
+        web
+        browser since January, 2018.</p>
+    </article>
+    <article class="articleMain">
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet
+        Explorer.</p>
+    </article>
+  </main>
+
+  <h3>The aside element + style CSS</h3>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quaerat? Commodi id dolorem aut, consequatur
+    voluptas eos necessitatibus, modi unde cupiditate similique quasi consequuntur nisi. Placeat vel quasi ab sapiente?
+  </p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga rem dicta optio. Itaque dignissimos cumque quam
+    soluta. Debitis neque aperiam temporibus, <a href="tags/tag_base.asp">Tag base in HTML</a> mollitia, iusto nulla, veniam saepe ex quaerat at ea!</p>
+  <aside>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rerum quam odit fugiat, excepturi vitae esse,
+      ipsum, voluptate sequi mollitia unde quae similique laborum. Officiis velit architecto facere eius quo.</p>
+  </aside>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, odio. Reiciendis, deleniti a quisquam molestias
+    aliquam asperiores est quos illum error dignissimos quas, maxime voluptatibus sapiente nulla consequatur modi harum.
+  </p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facilis autem maiores voluptatem mollitia.
+    Perferendis dolor maxime quasi veniam explicabo ipsum alias repellat eveniet ipsa libero voluptatem, vel iusto
+    saepe?</p>
+
+  <h3>The details & summary element</h3>
+
+  <details>
+    <summary>Lorem</summary>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione recusandae, eum facilis iste rerum aperiam
+      necessitatibus voluptas doloremque voluptates facere magnam itaque saepe quibusdam similique veniam autem dolorem
+      numquam rem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta officia molestias, assumenda vero
+      dignissimos officiis illum unde optio consequuntur eveniet facere illo obcaecati facilis vitae velit amet corporis
+      deserunt id?</p>
+  </details>
+
+  <h3>The dialog element</h3>
+
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+  <dialog open>This is some text.</dialog>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+
+  <h3>The data element</h3>
+  <ul>
+    <li><data value="21053">Blue</data></li>
+    <li><data value="21054">Red</data></li>
+  </ul>
 
 
 
 
 
+  <h3>The template element</h3>
 
-    <h3>The template element</h3>
+  <div class="buttonJs"><button onclick="showContent()">Show hidden content</button></div>
 
-    <button onclick="showContent()">Show hidden content</button>
-
-    <template>
-      <div class="useJs">I like!</div>
-    </template>
+  <template>
+    <div class="useJs">I like!</div>
+  </template>
 
 
-    <script>
-      let myArr = ['Audi', 'BMW', 'Ford', 'Toyota'];
+  <script>
+    let myArr = ['Audi', 'BMW', 'Ford', 'Toyota'];
 
-      function showContent() {
-        let temp, item, a, i;
-        temp = document.getElementsByTagName('template')[0];
-        item = temp.content.querySelector('div');
-        for (i = 0; i <myArr.length; i++) {
-          a = document.importNode(item, true);
-          a.textContent += myArr[i];
-          document.body.appendChild(a);
-        };
+    function showContent() {
+      let temp, item, a, i;
+      temp = document.getElementsByTagName('template')[0];
+      item = temp.content.querySelector('div');
+      for (i = 0; i < myArr.length; i++) {
+        a = document.importNode(item, true);
+        a.textContent += myArr[i];
+        document.body.appendChild(a);
       };
+    };
 
-    </script>
-  
+  </script>
+
+
+  <h3>The footer element</h3>
+  <footer>
+    <p>Autor: Denis_Yar <br>
+      <a href="malito:hege@example.com">hege@example.com</a>
+    </p>
+  </footer>
+
 </body>
 
 </html>
