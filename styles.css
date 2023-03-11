@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(156, 156, 249);
+    background-color: rgb(171, 171, 249);
     color: black;
 }
 
@@ -127,4 +127,15 @@ details > p {
     background-color: rgb(54, 44, 37);
     color: white;
     box-shadow: 5px 5px 10px;
+}
+
+.attributeH {
+    background-color: blue;
+    color: black;
+    text-align: center;
+}
+h3 {
+    background-color: rgb(105, 106, 102);
+    color: darkblue;
+    text-align: center;
 }

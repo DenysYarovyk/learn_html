@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta name="keywords" content="HTML, CSS, JS"/>
-  <meta name="description" content="Lear html tegs"/>
-  <meta name="author" content="Denys Yar"/>
+  <meta name="keywords" content="HTML, CSS, JS" />
+  <meta name="description" content="Lear html tegs" />
+  <meta name="author" content="Denys Yar" />
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- <base href="https://www.w3schools.com/" target="_blank"> -->
   <title>example</title>
   <link rel="stylesheet" href="/styles.css">
-  <script src="/script.js"></script>
+  <script src="/script.js" defer></script>
   <style>
     a:link {
       color: azure;
@@ -758,7 +758,8 @@
     voluptas eos necessitatibus, modi unde cupiditate similique quasi consequuntur nisi. Placeat vel quasi ab sapiente?
   </p>
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga rem dicta optio. Itaque dignissimos cumque quam
-    soluta. Debitis neque aperiam temporibus, <a href="tags/tag_base.asp">Tag base in HTML</a> mollitia, iusto nulla, veniam saepe ex quaerat at ea!</p>
+    soluta. Debitis neque aperiam temporibus, <a href="tags/tag_base.asp">Tag base in HTML</a> mollitia, iusto nulla,
+    veniam saepe ex quaerat at ea!</p>
   <aside>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rerum quam odit fugiat, excepturi vitae esse,
       ipsum, voluptate sequi mollitia unde quae similique laborum. Officiis velit architecto facere eius quo.</p>
@@ -796,33 +797,218 @@
   </ul>
 
 
+  <h1 class="attributeH">Learn Attributes</h1>
 
+  <h3>The attribute accept</h3>
+  <form action="/action_page_php">
+    <label for="img">select image:</label>
+    <input type="file" id="img" name="img" accept="image"><br>
+    <label for="submit" value="Sumit"></label>
+    <input type="submit">
+  </form>
 
+  <h3>The attribute accept-charset</h3>
+  <form action="/action_page_php" accept-charset="utf-8">
+    <label for="fname">First name</label>
+    <input type="text" id="fname" name="fname"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>The attribute acceseskey</h3>
+  <a href="https://www.w3schools.com/html/" target="_blank" accesskey="z">HTML</a><br>
+  <a href="https://www.w3schools.com/css/" target="_blank" accesskey="x">CSS</a>
+
+  <h3>The attribute autocomplate</h3>
+  <form action="/action_page_php" autocomplete="on">
+    <label for="fname">First name</label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name</label>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" autocomplete="on"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>The attribute autofocus</h3>
+  <textarea cols="50" rows="5">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos aperiam, cumque ipsa molestias nulla magnam repellat. Blanditiis maxime reiciendis, iste consequuntur voluptate rerum eveniet, sit, voluptates saepe fugit repudiandae at?
+    </textarea>
+
+  <!-- <h3>The attribute autoplay</h3>
+    <video width="320" height="240" controls autoplay>
+      <source src="/video/movie.mp4" type="video/mp4">
+    </video> -->
+
+  <h3>The attribute checkbox</h3>
+  <form action="/action_page_php">
+    <input type="checkbox" name="vehicle1" value="Bike">
+    <label for="vehicle1">I have a bike!</label><br>
+    <input type="checkbox" name="vehicle2" value="Car">
+    <label for="vehicle2">S have a car!</label><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>The atribute cite</h3>
+  <blockquote cite="http://www.worldwildlife.org/who/index.htm">
+    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works
+    in
+    100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+  </blockquote>
+
+  <h3>The atribute colspan for th</h3>
+  <table>
+    <tr>
+      <th colspan="2">Monthly saving</th>
+    </tr>
+    <tr>
+      <td>setember</td>
+      <td>100$</td>
+    </tr>
+    <tr>
+      <td>november</td>
+      <td>50$</td>
+    </tr>
+  </table>
+
+  <h4>The atribute colspan for td</h4>
+  <table>
+    <tr>
+      <th>Montly</th>
+      <th>Saving</th>
+    </tr>
+    <tr>
+      <td>september</td>
+      <td>100$</td>
+    </tr>
+    <tr>
+      <td>november</td>
+      <td>50$</td>
+    </tr>
+    <tr>
+      <td colspan="2">Sum: 150$</td>
+    </tr>
+  </table>
+
+  <h3>The attribute contenteditable</h3>
+  <p class="practicJs" id="demo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis expedita
+    exercitationem quos quam
+    consectetur minus similique est nostrum atque tempora cupiditate laborum ratione harum repellendus, labore nihil
+    beatae amet!Lorem</p>
+  <button type="button" onclick="document.getElementById('demo').innerHTML='Hello JavaScript'">Click me!</button>
+  <p contenteditable="true">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum similique officia nemo
+    inventore rerum. Reprehenderit veritatis libero tempore. Veniam hic itaque perspiciatis ullam id necessitatibus
+    animi voluptatem, adipisci assumenda obcaecati?</p>
+
+  <h3>The attribute data- with js</h3>
+  <ul>
+    <li onclick="showDetails(this)" id="owl" data-animal-type="bird">Owl</li>
+    <li onclick="showDetails(this)" id="salmon" data-animal-type="fish">Salmon</li>
+    <li onclick="showDetails(this)" id="tarantula" data-animal-type="spider">Tarantula</li>
+  </ul>
+
+  <h3>The datatime attribute</h3>
+  <p>I have birthday <time datetime="1990-09-10 00:00"></time></p>
+  <p> this is inst text <ins datetime="2023-03-10 15:18"></ins></p>
+
+  <h3>The dir element</h3>
+  <p dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit aperiam inventore obcaecati veritatis
+    numquam
+    corrupti totam officia commodi perspiciatis? Deleniti vero praesentium architecto nam sequi nesciunt in, nulla
+    quasi?</p>
 
   <h3>The template element</h3>
-
   <div class="buttonJs"><button onclick="showContent()">Show hidden content</button></div>
-
   <template>
     <div class="useJs">I like!</div>
   </template>
 
+  <h3>The dirname attribute</h3>
+  <form action="action_page_php">
+    <label for="fname">First name</label>
+    <input type="text" id="fname" name="fname" dirname="fname.dir">
+    <input type="submit" value="Submit">
+  </form>
 
-  <script>
-    let myArr = ['Audi', 'BMW', 'Ford', 'Toyota'];
+  <h3>The disabled attribute (2 examles)</h3>
+  <form action="action_page_php">
+    <fieldset disabled>
+      <legend>Personality</legend>
+      <label for="fname">First name</label>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"><br>
+      <label for="birhtday">Birthday</label>
+      <input type="number" id="birthday" name="birthday"><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
 
-    function showContent() {
-      let temp, item, a, i;
-      temp = document.getElementsByTagName('template')[0];
-      item = temp.content.querySelector('div');
-      for (i = 0; i < myArr.length; i++) {
-        a = document.importNode(item, true);
-        a.textContent += myArr[i];
-        document.body.appendChild(a);
-      };
-    };
+  <form action="/action_page_php">
+    <label for="cars">Cars</label>
+    <select name="cars" id="cars">
+      <optgroup label="swidish car" disabled>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="usa cars">
+        <option value="jeep">Jeep</option>
+        <option value="ford">Ford</option>
+      </optgroup>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
 
-  </script>
+  <h3>The dowload attribute</h3>
+  <img src="/img/planets.gif" alt="Solar system" width="145" height="126" usemap="#planetmap">
+  <map name="planetmap">
+    <area shape="rect" coords="0, 0, 82, 126" href="/link/information_about_the_sun.htm" alt="Sun" download>
+    <area shape="circle" coords="50, 58, 3" href="/img/merglobe (1).gif" alt="Mercuriy" download>
+    <area shape="circle" coords="124, 58, 8" href="/textFile/information_about_the_planet_venus (2).txt" alt="Venera" download>
+  </map>
+
+  <h3>The enctype attribute</h3>
+  <form action="/action_page_binary.asp" method="post" enctype="multipart/form-data">
+    <label for="fname">Firs name</label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name</label>
+    <input type="text" id="lname" name="lname"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1>JavaScript</h1>
+  <!-- <button onclick="document.getElementById('myImage').src='/img/pic_bulbon.gif'">Turn on the left</button>
+  <img src="/img/pic_bulboff.gif" id="myImage" style="width: 100px;">
+  <button onclick="document.getElementById('myImage').src='/img/pic_bulboff.gif'">Turn on the right</button> -->
+
+    <img id="myImage" src="/img/pic_bulboff.gif" width="100px">
+    <button id="turnOnBtn">Turn on the light</button>
+    <button id="turnOffBtn">Turn off the light</button>
+
+
+
+
 
 
   <h3>The footer element</h3>
