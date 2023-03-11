@@ -977,7 +977,72 @@
     <input type="submit" value="Submit">
   </form>
 
+  <h3>The for attribute</h3>
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50">
+    +<input type="number" id="b" value="25">
+    =<output name="x" for="a b"></output>
+  </form>
 
+  <h3>The form attribute (2 example)</h3>
+  <form action="/action_page_php" method="get" id="form1">
+    <label for="favcolor">What your favorite color?</label>
+    <input type="text" id="favcolor" name="favcolor">
+    <input type="submit" value="submit">
+  </form>
+
+  <fieldset form="form1">
+    <legend>Personality</legend>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" form="form1"><br>
+    <label for="birthday">Birthday</label>
+    <input type="namber" id="biethday" name="birthday" form="form1"> 
+  </fieldset>
+
+  <form action="/action_page_php" id="usrform">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="submit">
+  </form>
+
+  <textarea name="content" form="usrform" cols="50" rows="4">Write text here....</textarea>
+
+  <h3>The attribute formaction</h3>
+
+  <form action="/action_page_php">
+    <label for="fname">First name</label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name</label>
+    <input type="submit" value="Submit">
+    <input type="submit" formaction="/action_page_php2" value="Submit another page">
+  </form>
+
+  <h3>The headers attribute (2 example)</h3>
+
+  <table>
+    <caption>The attribute headers width element th</caption>
+    <tr>
+      <th id="name" colspan="2">Name</th>
+    </tr>
+    <tr>
+      <th headers="name">Firs</th>
+      <th headers="name">Last</th>
+    </tr>
+  </table>
+
+  <table>
+    <caption>attridute headers with element td</caption>
+    <tr>
+      <th id="name">Name</th>
+      <th id="address">Address</th>
+      <th id="telephone">Number telephone</th>
+    </tr>
+    <tr>
+      <td headers="name">Djon</td>
+      <td headers="address">Malibu 324</td>
+      <td headers="telephone">+3809999999</td>
+    </tr>
+  </table>
 
 
 
