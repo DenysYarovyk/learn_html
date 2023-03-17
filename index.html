@@ -118,7 +118,7 @@
 </head>
 
 
-<body>
+<body onafterprint="myOnafterprint()" onbeforeprint="myOnbeforeprint()" onresize="myOnresize()">
   <header>
     <h1 style="text-align: center; color:rgb(42, 58, 28);">learn tegs HTML</h1>
   </header>
@@ -965,7 +965,8 @@
   <map name="planetmap">
     <area shape="rect" coords="0, 0, 82, 126" href="/link/information_about_the_sun.htm" alt="Sun" download>
     <area shape="circle" coords="50, 58, 3" href="/img/merglobe (1).gif" alt="Mercuriy" download>
-    <area shape="circle" coords="124, 58, 8" href="/textFile/information_about_the_planet_venus (2).txt" alt="Venera" download>
+    <area shape="circle" coords="124, 58, 8" href="/textFile/information_about_the_planet_venus (2).txt" alt="Venera"
+      download>
   </map>
 
   <h3>The enctype attribute</h3>
@@ -996,7 +997,7 @@
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" form="form1"><br>
     <label for="birthday">Birthday</label>
-    <input type="namber" id="biethday" name="birthday" form="form1"> 
+    <input type="namber" id="biethday" name="birthday" form="form1">
   </fieldset>
 
   <form action="/action_page_php" id="usrform">
@@ -1044,15 +1045,236 @@
     </tr>
   </table>
 
+  <h3>The attribute high</h3>
+  <label for="Anna">Anna's score:</label>
+  <meter id="Anna" min="0" low="40" high="90" max="100" value="95"></meter><br>
+  <label for="Anna">Banna's score:</label>
+  <meter id="Anna" min="0" low="40" high="90" max="100" value="65"></meter><br>
+  <label for="Anna">Sara's score:</label>
+  <meter id="Anna" min="0" low="40" high="90" max="100" value="35"></meter>
+
+  <h3>The attribute list</h3>
+  <form action="action_page_php" method="get">
+    <label for="browser">Chose yoor browser</label>
+    <input list="browsers" id="browser" name="browser">
+    <datalist id="browsers">
+      <option value="chrome"></option>
+      <option value="Opera"></option>
+      <option value="Mazila"></option>
+      <option value="Yandex"></option>
+    </datalist>
+    <input type="submit">
+  </form>
+
+  <h3>The attribute loop</h3>
+  <video controls loop muted oncanplay="myOncanplay()">
+    <source src="/video/movie.mp4" type="video/mp4">
+    <source src="/video/movie.ogg" type="video/ogg">
+  </video>
+
+  <h3>The attribute max</h3>
+  <form action="action_page_php">
+    <label for="datemax">Enter a date before 1980-01-01</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br>
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+    <label for="quantity">Quantity (between -10 and 10):</label>
+    <input type="number" id="quantity" name="quantity" min="-10" max="10"><br>
+    <input type="submit" value="submit">
+  </form>
+
+  <h3>The attribute maxlength for input & textarea elements</h3>
+  <form action="action_page_php">
+    <label for="username">User name:</label>
+    <input type="text" id="username" name="username" maxlength="10">
+    <input type="submit">
+  </form>
+
+  <label for="testing"> testing textarea elements</label><br>
+  <textarea id="testing" name="testing" cols="50" rows="4" maxlength="10"></textarea><br>
+  <input type="submit" value="Submit">
+
+  <h3>The media attribute</h3>
+  <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_a_media"
+    media="print and (resolution: 300dpi)">Open media attribute page for print</a><br>
+  <img src="/img/planets.gif" alt="Solar system" width="145" height="125" usemap="#planetmap">
+  <map name="planetmap">
+    <area shape="rect" coords="0, 0, 82, 126" href="/img/sun (1).gif" alt="sun"
+      media="screen and (min-color-index:256)">
+  </map>
+
+  <h3>The attribute multiple</h3>
+  <form action="action_page_php">
+    <label for="files">Select files</label>
+    <input type="file" id="files" name="files" multiple><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <form action="action_page_php">
+    <label for="select">choose a car:</label><br>
+    <select name="select" id="select" multiple>
+      <option value="volvo">volvo</option>
+      <option value="saab">saab</option>
+      <option value="saab">saab</option>
+      <option value="saab">saab</option>
+      <option value="saab">saab</option>
+    </select>
+    <input type="submit">
+  </form>
+
+  <h3>The attribute name & novalidate</h3>
+  <form action="action_page_php" method="get" novalidate>
+    <fieldset name="personality">
+      <label for="fname">First name</label>
+      <input type="text" name="fname" id="fname">
+    </fieldset>
+    <input type="submit" value="Submit">
+    <button type="button" onclick="form.personality.style.backgroundColor='gray'">Click mee</button>
+  </form>
+
+  <iframe src="https://www.w3schools.com/tags/att_name.asp" name="iframe_a"></iframe><br>
+  <a href="https://www.w3schools.com/tags/att_name.asp" target="iframe_a">W3school</a>
+
+  <h3>The attribute onchange</h3>
+  <select id="mySelect" onchange="myFunction()">
+    <option value="Audi">Audi
+    <option value="BMW">BMW
+    <option value="Mercedes">Mercedes
+    <option value="Volvo">Volvo
+  </select>
+
+  <p id="demo1"></p>
+
+  <h3>The attribute onclick</h3>
+  <p id="demo2" onclick="myOnclick()">Click mee and change my color</p>
+
+  <h3>The oncopy attribute</h3>
+  <p oncopy="myOncopy()">Try to copy this text</p>
+
+  <h3>The oncut & contenteditable attribute</h3>
+  <p oncut="myOncut()" contenteditable="true">Try to cut this text</p>
+
+  <h3>The attribute ondblick</h3>
+  <button ondblclick="myOndblick()">doble click me</button>
+  <p id="demo3"></p>
+
+  <h3>The ondrag element</h3>
+  <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me</p>
+  </div>
+  <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <p style="clear:both;" id="demo4"></p>
+
+  <h3>The attribute ondurationchange</h3>
+  <video src="/video/mov_bbb.mp4" controls onended="myOnended()"></video>
+
+  <h3>The element onfocus</h3>
+  first name:<input type="text" id="fname" onfocus="myOnfocus(this.id)">
+
+  <h3>The oninput attribute</h3>
+  <input type="text" id="myInp" oninput="myOniput()">
+  <p id="demo5"></p>
+
+  <h3>The attribute oninvalid</h3>
+  <form action="action_page_php" onsubmit="myOnsubmit()">
+    <label for="fname">First name</label>
+    <input type="text" id="fname" name="fname" oninvalid="" required>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>The attribute onload</h3>
+  <input type="image" onload="loadImage()" src="/img/pic_bulbon.gif" alt="arrow" width="42" height="41">
+
+  <h3>The onmousedown & onmouseup attribute</h3>
+  <p id="demo6" onmousedown="mouseDown()" onmouseup="mouseUp()">Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Qui ut necessitatibus, voluptatibus quaerat natus dolorem
+    iste placeat, quis recusandae nulla dicta sint ex! Facilis necessitatibus est cum provident voluptate consequuntur!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate magnam quod facere adipisci, tenetur vero
+    voluptatum consectetur reprehenderit iusto hic fugit esse beatae ad consequatur, minus tempora corrupti perferendis?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus eius, nam hic a dolorum maiores facere.
+    Nostrum iusto aperiam molestias cum? Cum et animi quas! Voluptates, deserunt. Atque, debitis?</p>
+
+  <h3>The attribute onmousemove & onmouseout</h3>
+  <img src="/img/smiley.gif" alt="smiley" width="32" height="32" onmousemove="bigImg(this)"
+    onmouseout="normalImg(this)">
 
 
+  <h3>The attribute onpaste</h3>
+  <input type="text" onpaste="myOnpaste()" value="Try to paste something in here" size="80">
+  <p id="demo7"></p>
 
+  <h3>The attribute onratechange</h3>
+  <video src="/video/mov_bbb.mp4" width="320" height="176" id="myOnratechangeVideo" controls
+    onratechange="myOnratechange()"></video>
+  <p id="demo8">Change the speed of the video</p>
+  <input type="range" min="0.1" max="3" step="0.1" value="1" oninput="changeRate(this)">
 
+  <h3>The onreset attribute</h3>
+  <form action="action_page_php" onreset="myOnreset()">
+    <label for="fname">First name</label>
+    <input type="text" id="name" name="name">
+    <input type="reset">
+  </form>
 
+  <h3>The attribute onscrole</h3>
+  <div class="onscroll" id="demo9" onscroll="myOnscroll()">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus veniam molestiae reiciendis ut qui
+      laborum, odio omnis, accusantium earum, ipsam obcaecati minima dolor quia. Amet facilis provident nisi quod. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatum placeat aperiam perferendis ratione rerum error
+      unde commodi aspernatur, at blanditiis quasi tempore cupiditate amet quaerat? Dicta adipisci est cum?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, vitae doloribus repellat esse ipsum veniam dolorum
+      eos expedita consequuntur! Cumque voluptas quae ipsam reprehenderit aspernatur assumenda tempora laborum in esse?
+    </p>
+  </div>
 
+  <h3>The onselect attribute</h3>
+  <input type="text" value="Select me!" onselect="myOnselect()">
 
+  <h3>The attribute onetimeupdate</h3>
+  <p id="demo10">Move to a new position in the video:</p>
+  <video src="/video/movie.mp4" id="onetimeupdateVideo" controls ontimeupdate="myOnetimeupdate()"></video>
 
+  <h3>The ontoggle attribute</h3>
+  <details ontoggle="myOntoggle()">
+    <summary>currentTime</summary>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae eos inventore. Voluptatem, voluptate
+      ratione sed eveniet, non, blanditiis odit sit numquam quasi ullam quidem accusamus doloribus culpa! Ratione, ut?
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus optio eaque cum tenetur quasi? Minus
+      excepturi tenetur atque et quia, id optio a cum maxime molestiae molestias nemo sunt tempore.</p>
+  </details>
 
+  <h3>The attribute open</h3>
+  <details open>
+    <summary>tect attr. open</summary>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores incidunt minima aperiam voluptas voluptatem
+      facere eum nostrum assumenda, sequi, modi repellat nemo dicta repellendus dolorem fuga ipsa asperiores blanditiis.
+      Iusto?</p>
+  </details>
+
+  <h3>the attribute optimum</h3>
+  <p>
+  <label for="ageYang">Optimum age</label>
+  <meter id="ageYang" value="0.3" low="0.1" high="0.6" optimum="0.2"></meter>
+  </p>
+
+  <h3>The pattern attribute (3 examples)</h3>
+  <form action="action_page_php">
+    <label for="pwd">Pasword :</label>
+    <input type="text" id="pwd" name="pwd" pattern=".{8}" title="Eight or more characters!">
+    <input type="submit">
+  </form>
+  <form action="action_page_php">
+    <label for="pwd">Pasword :</label>
+    <input type="text" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+    <input type="submit">
+  </form>
+
+  <form action="action_page_php">
+    <label for="codeC">Code country :</label>
+    <input type="text" id="codeC" name="codeC" pattern="[A-Za-z]{3}" title="write code country (not more tree characters!)">
+    <input type="submit">
+  </form>
 
 
 
@@ -1067,9 +1289,9 @@
   <img src="/img/pic_bulboff.gif" id="myImage" style="width: 100px;">
   <button onclick="document.getElementById('myImage').src='/img/pic_bulboff.gif'">Turn on the right</button> -->
 
-    <img id="myImage" src="/img/pic_bulboff.gif" width="100px">
-    <button id="turnOnBtn">Turn on the light</button>
-    <button id="turnOffBtn">Turn off the light</button>
+  <img id="myImage" src="/img/pic_bulboff.gif" width="100px">
+  <button id="turnOnBtn">Turn on the light</button>
+  <button id="turnOffBtn">Turn off the light</button>
 
 
 
